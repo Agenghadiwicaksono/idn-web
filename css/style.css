@@ -58,24 +58,69 @@ section{
     display: none;
 }
 .home{
-    background: url(img/home.png) rgb(247, 247, 247);
     width: 100%;
-    height: auto;
-    background-size: cover;
+    height: 100%;
+    background: radial-gradient(
+          circle farthest-side at 0% 50%,
+          rgb(247, 247, 247) 23.5%,
+          rgba(208, 236, 234, 0) 0
+        )
+        21px 30px,
+      radial-gradient(
+          circle farthest-side at 0% 50%,
+          #05f0f0 24%,
+          rgba(17, 240, 169, 0) 0
+        )
+        19px 30px,
+      linear-gradient(
+          rgb(247, 247, 247) 14%,
+          rgba(240, 166, 17, 0) 0,
+          rgba(240, 166, 17, 0) 85%,
+          rgb(247, 247, 247) 0
+        )
+        0 0,
+      linear-gradient(
+          150deg,
+          rgb(247, 247, 247) 24%,
+          #05f0f0 0,
+          #05f0f0 26%,
+          rgba(240, 166, 17, 0) 0,
+          rgba(240, 166, 17, 0) 74%,
+          #05f0f0 0,
+          #05f0f0 76%,
+          rgb(247, 247, 247) 0
+        )
+        0 0,
+      linear-gradient(
+          30deg,
+          rgb(247, 247, 247) 24%,
+          #05f0f0 0,
+          #05f0f0 26%,
+          rgba(240, 166, 17, 0) 0,
+          rgba(240, 166, 17, 0) 74%,
+          #05f0f0 0,
+          #05f0f0 76%,
+          rgb(247, 247, 247) 0
+        )
+        0 0,
+      linear-gradient(90deg, #05f0f0 2%,rgb(247, 247, 247) 0, rgb(247, 247, 247) 98%, #05f0f0 0%) 0 0 rgba(247, 247, 247, 0.786);
+    background-size: 40px 60px;
     text-align: center;
-    background-repeat: no-repeat;
-    padding: 300px;
 }
 .home-content h1{
    font-size: 40px;
    font-weight: 600;
-   color: whitesmoke;
+   color: var(--scnd-main-color);
+   margin-top: 50px;
 }
-
+.home-img img{
+    width: 100px;
+    text-align: center;
+}
 .home-content p{
     font-size: 13px;
     justify-content: center;
-    color: whitesmoke;
+    color: var(--hover-scnd-main);
     text-align: center;
 }
 .heading{
@@ -972,9 +1017,11 @@ section{
     }
     .home-content h1{
         font-size: 40px;
+        color: var(--scnd-main-color);
     }
     .home-content p{
         font-size: 20px;
+        color: var(--hover-scnd-main);
     }
     .mengapa-box h3{
         font-size: 13px;
@@ -1057,6 +1104,9 @@ section{
         padding: 150px;
 
     }
+    .home-img img{
+        margin-left: 30px;
+    }
     .home .home-content{
         display: inline-block;
         justify-content: center;
@@ -1066,7 +1116,7 @@ section{
         width: 300px;
         text-align: center;
         font-weight: 600;
-        color: whitesmoke;
+        color: var(--scnd-main-color);
         margin-left: -70px;
     }
     .home-content p{
@@ -1076,7 +1126,7 @@ section{
         font-weight: 500;
         line-height: 15px;
         margin-left: -130px;
-        color: whitesmoke;
+        color: var(--hover-scnd-main);
         padding-right: 100px ;
      }
      .c-button{
@@ -1179,6 +1229,9 @@ section{
         padding: 150px;
 
     }
+    .home-img img{
+        margin-left: -10px;
+    }
     .home .home-content{
         display: inline-block;
         justify-content: center;
@@ -1188,7 +1241,7 @@ section{
         width: 300px;
         text-align: center;
         font-weight: 600;
-        color: whitesmoke;
+        color: var(--scnd-main-color);
         margin-left: -100px;
     }
     .home-content p{
@@ -1198,7 +1251,7 @@ section{
         font-weight: 500;
         line-height: 15px;
         margin-left: -150px;
-        color: whitesmoke;
+        color: var(--hover-scnd-main);
         padding-right: 100px ;
      }
      .c-button{
