@@ -58,7 +58,7 @@ section{
     display: none;
 }
 .home{
-    background: url(/img/home.png) rgb(247, 247, 247);
+    background: url(img/home.png) rgb(247, 247, 247);
     width: 100%;
     height: auto;
     background-size: cover;
